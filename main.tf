@@ -1,5 +1,6 @@
 provider "aws" {
   region = "ap-southeast-1"
+  shared_credentials_files = [".aws/creds"]
 }
 
 data "aws_ami" "ubuntu" {
